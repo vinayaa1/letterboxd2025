@@ -1,53 +1,53 @@
 const movies = [
   {
     rank: 1,
-    title: "ill fill dis in later",
+    title: "the silence of the lambs",
     year: 2025,
-    director: "...",
-    rating: 5,
+    director: "jonathan demme",
+    rating: 4.5,
     posterUrl: "",
-    description: "...",
+    description: "wow there isnt much to say about this one. ive been wanting to watch it for a while and finally when i got the chance to, it didnt disappoint. all the characters did an OUTSTANDING job in portraying their role, i had to remind myself they were just actors as the gory scenes were playing. the conversations between dr hannibal the cannibal and clarice were definitely the most interesting aspect of this movie, regardless of their relation which seemed offsetting at times but i look forward to watching the sequel soon!",
     tags: ["..."]
   },
   {
     rank: 2,
-    title: "will fill",
+    title: "when i fly towards you",
     year: 2025,
-    director: "...",
-    rating: 4.5,
+    director: "shuang yuan",
+    rating: 5,
     posterUrl: "",
-    description: "...",
+    description: "if there were more than 5 stars, i would rate this infinity stars. tell me why i was hooked to this show, i finished it in a single day bc it was THAT GOOD. i love this show so sososososososososo much and cant wait for season 2!! suzaizai&rangrang4everrrrrrrr",
     tags: ["..."]
   },
   {
     rank: 3,
-    title: "scixviauofb",
+    title: "the truman show",
     year: 2025,
-    director: "...",
-    rating: 4.5,
+    director: "peter weir",
+    rating: 5,
     posterUrl: "",
-    description: "...",
+    description: "wow what if reality is actually a tv show...",
     tags: ["..."]
   },
   {
     rank: 4,
-    title: "grtdvcszxa",
+    title: "sita ramam",
     year: 2025,
-    director: "...",
-    rating: 4,
+    director: "hanu raghavapati",
+    rating: 4.5,
     posterUrl: "",
-    description: "....",
+    description: "YESSSS DULQUER SALMAANNN u have to watch this😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁",
     tags: ["..."]
   },
   {
     rank: 5,
-    title: "htbgfv",
+    title: "paddington 2",
     year: 2025,
-    director: "htgrf",
+    director: "paul king",
     rating: 4,
     posterUrl: "",
-    description: "bgvf",
-    tags: ["fd"]
+    description: "paddington will always be my favorite. i love him as much as he loves marmalade.",
+    tags: ["..."]
   }
 ];
 
@@ -143,3 +143,4 @@ document.addEventListener('keydown', e => {
 function closeModal() {
   document.getElementById('overlay').classList.remove('active');
 }
+
