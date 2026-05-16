@@ -5,7 +5,7 @@ const movies = [
     year: 2025,
     director: "jonathan demme",
     rating: 4.5,
-    posterUrl: "",
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_QL75_UY281_CR0,0,190,281_.jpg",
     description: "wow there isnt much to say about this one. ive been wanting to watch it for a while and finally when i got the chance to, it didnt disappoint. all the characters did an OUTSTANDING job in portraying their role, i had to remind myself they were just actors as the gory scenes were playing. the conversations between dr hannibal the cannibal and clarice were definitely the most interesting aspect of this movie, regardless of their relation which seemed offsetting at times but i look forward to watching the sequel soon!",
     tags: ["..."]
   },
