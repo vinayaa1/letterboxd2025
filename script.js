@@ -15,7 +15,7 @@ const movies = [
     year: 2025,
     director: "shuang yuan",
     rating: 5,
-    posterUrl: "",
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODI3NzUwYTktMjlkYS00MDNiLTg0MjgtNWQ1NWZkYmQ2Mzk4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     description: "if there were more than 5 stars, i would rate this infinity stars. tell me why i was hooked to this show, i finished it in a single day bc it was THAT GOOD. i love this show so sososososososososo much and cant wait for season 2!! suzaizai&rangrang4everrrrrrrr",
     tags: ["..."]
   },
@@ -25,7 +25,7 @@ const movies = [
     year: 2025,
     director: "peter weir",
     rating: 5,
-    posterUrl: "",
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     description: "wow what if reality is actually a tv show...",
     tags: ["..."]
   },
@@ -35,7 +35,7 @@ const movies = [
     year: 2025,
     director: "hanu raghavapati",
     rating: 4.5,
-    posterUrl: "",
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWE0NDNiNzEtNThmMi00NjZlLTk3NDAtYzIzOWNmNWQyYTI3XkEyXkFqcGc@._V1_.jpg",
     description: "YESSSS DULQUER SALMAANNN u have to watch this😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁",
     tags: ["..."]
   },
@@ -45,7 +45,7 @@ const movies = [
     year: 2025,
     director: "paul king",
     rating: 4,
-    posterUrl: "",
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTk1YzlhMTUtZmU5MC00NmRmLTlkZjItYzQ0NTY4Y2NiNzc4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     description: "paddington will always be my favorite. i love him as much as he loves marmalade.",
     tags: ["..."]
   }
