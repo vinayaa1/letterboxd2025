@@ -2,52 +2,52 @@ const movies = [
   {
     rank: 1,
     title: "the silence of the lambs",
-    year: 2025,
+    year: 1991,
     director: "jonathan demme",
     rating: 4.5,
     posterUrl: "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_QL75_UY281_CR0,0,190,281_.jpg",
     description: "wow there isnt much to say about this one. ive been wanting to watch it for a while and finally when i got the chance to, it didnt disappoint. all the characters did an OUTSTANDING job in portraying their role, i had to remind myself they were just actors as the gory scenes were playing. the conversations between dr hannibal the cannibal and clarice were definitely the most interesting aspect of this movie, regardless of their relation which seemed offsetting at times but i look forward to watching the sequel soon!",
-    tags: ["..."]
+    tags: ["thriller", "psychological", "crime", "horror"]
   },
   {
     rank: 2,
     title: "when i fly towards you",
-    year: 2025,
+    year: 2023,
     director: "shuang yuan",
     rating: 5,
-    posterUrl: "https://m.media-amazon.com/images/M/MV5BODI3NzUwYTktMjlkYS00MDNiLTg0MjgtNWQ1NWZkYmQ2Mzk4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    posterUrl: "",
     description: "if there were more than 5 stars, i would rate this infinity stars. tell me why i was hooked to this show, i finished it in a single day bc it was THAT GOOD. i love this show so sososososososososo much and cant wait for season 2!! suzaizai&rangrang4everrrrrrrr",
-    tags: ["..."]
+    tags: ["romance", "youth", "chinese drama", "feel-good"]
   },
   {
     rank: 3,
     title: "the truman show",
-    year: 2025,
+    year: 1998,
     director: "peter weir",
     rating: 5,
-    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    posterUrl: "",
     description: "wow what if reality is actually a tv show...",
-    tags: ["..."]
+    tags: ["sci-fi", "drama", "satire", "existential"]
   },
   {
     rank: 4,
     title: "sita ramam",
-    year: 2025,
+    year: 2022,
     director: "hanu raghavapati",
     rating: 4.5,
-    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWE0NDNiNzEtNThmMi00NjZlLTk3NDAtYzIzOWNmNWQyYTI3XkEyXkFqcGc@._V1_.jpg",
+    posterUrl: "",
     description: "YESSSS DULQUER SALMAANNN u have to watch this😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁",
-    tags: ["..."]
+    tags: ["romance", "war", "telugu", "period drama"]
   },
   {
     rank: 5,
     title: "paddington 2",
-    year: 2025,
+    year: 2017,
     director: "paul king",
     rating: 4,
-    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTk1YzlhMTUtZmU5MC00NmRmLTlkZjItYzQ0NTY4Y2NiNzc4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    posterUrl: "",
     description: "paddington will always be my favorite. i love him as much as he loves marmalade.",
-    tags: ["..."]
+    tags: ["family", "comedy", "wholesome", "adventure"]
   }
 ];
 
@@ -57,7 +57,6 @@ function starsHtml(rating) {
   const full  = Math.floor(rating);
   const half  = (rating % 1) >= 0.5 ? 1 : 0;
   const empty = 5 - full - half;
-
   let html = '';
   for (let i = 0; i < full;  i++) html += '<span class="star">&#9733;</span>';
   if (half)                        html += '<span class="star">&#9734;</span>';
@@ -89,6 +88,11 @@ movies.forEach(movie => {
     <div class="poster-wrap">
       ${posterHtml(movie.posterUrl, movie.title)}
       <div class="rank-badge">#${movie.rank}</div>
+      <div class="card-hover-overlay">
+        <div class="card-hover-stars">${starsHtml(movie.rating)}</div>
+        <div class="card-hover-title">${movie.title}</div>
+        <div class="card-hover-hint">click to read</div>
+      </div>
     </div>
     <div class="star-row">${starsHtml(movie.rating)}</div>
     <div class="movie-meta-title">${movie.title}</div>
@@ -104,11 +108,11 @@ function openModal(movie) {
     '#6 of 2025', '#7 of 2025', '#8 of 2025', '#9 of 2025', '#10 of 2025'
   ];
 
-  document.getElementById('modal-rank').textContent    = ordinals[movie.rank - 1] || `#${movie.rank} of 2025`;
-  document.getElementById('modal-title').textContent   = movie.title;
+  document.getElementById('modal-rank').textContent     = ordinals[movie.rank - 1] || `#${movie.rank} of 2025`;
+  document.getElementById('modal-title').textContent    = movie.title;
   document.getElementById('modal-year-dir').textContent = `${movie.year} · dir. ${movie.director}`;
-  document.getElementById('modal-stars').innerHTML     = starsHtml(movie.rating);
-  document.getElementById('modal-desc').textContent    = movie.description;
+  document.getElementById('modal-stars').innerHTML      = starsHtml(movie.rating);
+  document.getElementById('modal-desc').textContent     = movie.description;
 
   const posterEl = document.getElementById('modal-poster');
   if (movie.posterUrl) {
