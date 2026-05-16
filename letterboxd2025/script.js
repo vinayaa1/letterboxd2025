@@ -116,7 +116,7 @@ function openModal(movie) {
   } else {
     posterEl.innerHTML = `
       <div class="modal-poster-placeholder">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2a2824" stroke-width="1.5">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2c2924" stroke-width="1.5">
           <rect x="2" y="3" width="20" height="18" rx="2"/>
           <path d="M8 7h.01M16 7h.01M8 12h8M8 16h5"/>
         </svg>
