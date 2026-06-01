@@ -1,10 +1,10 @@
 ﻿# letterboxd2025
-## a personal film ranking page inspired by letterboxd. displays my top watched movies with poster art, star ratings, and reviews.
+## a personal film ranking page inspired by letterboxd. displays my top watched movies with poster art, star ratings, and reviews. (link: https://vinayaa1.github.io/letterboxd2025/)
 # files
 
-### index.html — page structure
-### style.css — all styling
-### script.js — movie data and interactivity
+### index.html ~ page structure
+### style.css ~ all styling
+### script.js ~ movie data and interactivity
 
 # how to use
 ## open index.html in a browser. click any poster to read the review.
